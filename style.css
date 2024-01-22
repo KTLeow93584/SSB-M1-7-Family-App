@@ -1,0 +1,83 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+label {
+  font-size: 16px;
+}
+
+input {
+  padding: 10px;
+  margin: 10px 0px;
+  border-radius: 5px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: center;
+  margin-top: 30px;
+}
+
+table, table td, table th {
+  border: 1px solid black;
+  padding: 8px;
+}
+
+.table-buttons {
+  background-color: blueviolet;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  padding: 5px 25px;
+  magin: 5px 10px;
+  border-radius: 5px;
+  border-color: black;
+  border-style: solid;
+}
+
+#submit {
+  /*
+  #003973 from 0% fill position to 51% fill position.
+  #E5E5BE from 51% fill position to 100% fill position.
+  #003973 from 100% fill position onwards.
+  Extracted frome example: https://gradientbuttons.colorion.co/
+  */
+  background-image: linear-gradient(to right, #003973 0%, #E5E5BE  51%, #003973  100%);
+  color: white;
+  
+  transition: 0.5s;
+  /*
+  Note to self: Animation would stop at 100%background size because even if direction was changed, it'll be the same.
+  */
+  background-size: 200% auto;
+  
+  padding: 15px;
+  width: 270px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#submit:hover {
+  /*
+  Change the direction of the change here.
+  default value for "background-position" when unhovered: left top or 0% for X 0% for Y;
+  */
+  background-position: right center;
+}

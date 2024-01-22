@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>
+    Family App - Leow Kean Tat (Kaz)
+  </title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Family Member Information</h1>
+  <img src="family.png" alt="" height="300px">
+
+  <div class="input-group">
+    <label for="name">Name: </label>
+    <input type="text" id="name">
+  </div>
+  
+  <div class="input-group">
+    <label for="age">Age: </label>
+    <input type="text" id="age">
+  </div>
+  
+  <div class="input-group">
+    <label for="gender">Gender: </label>
+    <input type="text" id="gender">
+  </div>
+  
+  <button onclick="submitFamilyMemberInfo()" id="submit">Submit</button>
+
+  <table id="family-members">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Gender</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    
+    <tbody>
+    </tbody>
+  </table>
+  
+  <script src="script.js">
+  </script>
+</body>
+
+</html>
